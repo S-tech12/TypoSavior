@@ -188,6 +188,9 @@
                 });
 
                 const data = await res.json();
+
+                console.log(data);
+                
                 const { original, corrected } = data;
 
                 const comparison = compareSentences(original, corrected);
